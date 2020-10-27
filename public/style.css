@@ -1,0 +1,20 @@
+.list-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tournament-container {
+  padding: 10px;
+
+}
+
+.main-img {
+  width: 400px;
+
+}
+
+.img-header{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 40px;
+}
