@@ -32,7 +32,10 @@ router.delete('/:id', (req, res) => {
 });
 
 router.put('/:id', (req, res) => {
-    postgres.query(`UPDATE tournament SET TOURNAMENT_NAME = '${req.body.tournament_name}', TOURNAMENT_TYPE = '${req.body.tournament_type}', TOURNAMENT_LEVEL = '${req.body.tournament_level}', TOURNAMENT_DATE = '${req.body.tournament_date}', PLAYER_POS1 = '${req.body.player_pos1}' WHERE id = ${req.params.id}`, (err, results) => {
+    let column = req.body.column
+    let player = req.body.player
+    console.log(column, player, "testing put request");
+    postgres.query(`UPDATE tournament SET ${column} = '${player}' WHERE id = ${req.params.id};`, (err, results) => {
       if (err){
         res.status(404).send('update error')
       }else{
@@ -40,6 +43,7 @@ router.put('/:id', (req, res) => {
           if (err){
             res.status(404).send('select error')
           }else{
+            console.log(results.rows, "successful update");
             res.json(results.rows)
           }
 

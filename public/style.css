@@ -1,15 +1,44 @@
+body {
+
+  background: rgb(0,212,255);
+background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(2,0,36,1) 0%, rgba(134,21,149,1) 100%);
+background: cover;
+color: white;
+}
+
+#edit-player {
+  background-color: transparent;
+  border-color: transparent;
+  color: white;
+  font-size: 30px;
+}
+.form-container{
+  background-color: #758991;
+  text-align: left;
+  width: 90%;
+  padding: 30px;
+  border-radius: 10px;
+  font-family:
+}
+
 .list-container {
   display: flex;
   flex-wrap: wrap;
+   color: white;
 }
 
 .tournament-container {
   padding: 10px;
+}
 
+img{
+  border-radius: 10px;
+  align-items: center;
 }
 
 .main-img {
-  width: 400px;
+  width: 500px;
+
 
 }
 
@@ -17,4 +46,9 @@
   display: flex;
   justify-content: space-between;
   margin: 0 40px;
+  color: white;
+
+}
+h1 {
+  color: white;
 }

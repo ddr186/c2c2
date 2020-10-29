@@ -5,6 +5,7 @@ const List = (props) => {
         {
           props.tournaments.map((item, index) => {
             return <Tournament
+              id= {item.id}
               tournament_name={item.tournament_name}
               tournament_type={item.tournament_type}
               tournament_level={item.tournament_level}

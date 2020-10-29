@@ -8,6 +8,10 @@ componentDidMount = () => {
   this.getTournaments()
 }
 
+componentDidUpdate = () => {
+  this.getTournaments()
+}
+
 getTournaments = () => {
   axios.get('/tournament')
   .then((response) => {

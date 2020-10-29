@@ -24,6 +24,8 @@ onInputChange = (event) => {
   })
 }
 
+
+
 onFormSubmit = (event) => {
   event.preventDefault()
   axios.post("/tournament",{
@@ -51,8 +53,8 @@ onFormSubmit = (event) => {
 
   render = () => {
     return (
-      <div>
-        <form onSubmit= {this.onFormSubmit}>
+      <details>
+        <form className="form-container" onSubmit= {this.onFormSubmit}>
           <label>
           Tournament Name:
             <input type="text" onChange= {this.onInputChange} name="tournament_name" value= {this.state.tournament_name}/>
@@ -120,7 +122,7 @@ onFormSubmit = (event) => {
           <input type="submit" value="Add new tournament"/>
         </form>
 
-      </div>
+      </details>
     )
   }
 }
