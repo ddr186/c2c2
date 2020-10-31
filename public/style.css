@@ -1,9 +1,11 @@
-body {
+body, html {
 
   background: rgb(0,212,255);
-background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(2,0,36,1) 0%, rgba(134,21,149,1) 100%);
-background: cover;
-color: white;
+  background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(2,0,36,1) 0%, rgba(134,21,149,1) 100%);
+  background: cover;
+  color: white;
+  font-family: 'Atomic Age', cursive;
+
 }
 
 #edit-player {
@@ -11,6 +13,20 @@ color: white;
   border-color: transparent;
   color: white;
   font-size: 30px;
+}
+
+.hh {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  width: 500px;
+}
+
+.hh1{
+  width: 500px;
+  align-items: center;
+  justify-content: space-around;
 }
 .form-container{
   display: flex;
@@ -42,16 +58,18 @@ color: white;
 
 }
 
-img{
-  border-radius: 10px;
-  align-items: center;
+.hero-body {
+  text-align: center;
+  font-family: 'Sancreek';
 }
+
 
 .main-img {
   display: flex;
-  width: 500px;
+  width: 800px;
   justify-content: space-between;
   padding: 20px;
+  border-radius: 20px;
 }
 
 .img-index{
@@ -70,8 +88,20 @@ img{
   color: white;
 
 }
+img {
+  border-radius: 10px;
+}
+
+button {
+  background: lightblue;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
 h1 {
-  font-size: 20px;
-  font-family: 'Atomic Age', cursive;
+  font-size: 500px;
+  font-family: sans-serif;
   color: white;
+  align-items: center;
+  justify-content: center;
 }

@@ -56,7 +56,7 @@ const EditForm = (props) => {
       <input type="submit" value="submit"/>
 
       <option>
-      Player10: {props.player_10}
+      Player10: {props.player_pos10}
       </option>
       <input type="text" value={props.player10} onChange={props.editPlayer} name="player10"/>
       <input type="submit" value="submit"/>

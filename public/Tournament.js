@@ -27,7 +27,6 @@ editPlayer = (event) => {
 deleteTournament = (event) => {
   axios.delete('/tournament/' + event.target.value).then(
     (response) => {
-    console.log(response, "hi from delete========");
     })
 }
 
